@@ -6,6 +6,7 @@ int menuList(){
     cout<<"1.Addition"<<endl;
     cout<<"2.Substraction"<<endl;
     cout<<"3.Multiply"<<endl;
+    cout<<"4.Division"<<endl;
     cout<<"Enter your choice:";
     cin>>choice;
     return choice;
@@ -23,6 +24,11 @@ int multiply(int a,int b){
     int mul=a*b;
     cout<<"Multiply is :"<<mul<<endl;
 }
+int division(int a,int b)
+{
+    int div=a/b;
+    cout<<"Division is :"<<div;
+}
 int main(){
     int a;
     int b;
@@ -36,12 +42,15 @@ int main(){
             case 1:
                 ::addition(a,b);
                 break;
-
             case 2:
                 ::substraction(a,b);
                 break;
             case 3:
                 ::multiply(a,b);
+                break;
+            case 4:
+                ::division(a,b);
+                break;
         }
     }
 
