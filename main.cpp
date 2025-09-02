@@ -41,7 +41,7 @@ int main(){
                 ::substraction(a,b);
                 break;
             case 3:
-                ::multiply(a,b);
+                //::multiply(a,b);
         }
     }
 
