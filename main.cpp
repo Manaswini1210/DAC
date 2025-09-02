@@ -26,6 +26,7 @@ int multiply(int a,int b){
 int main(){
     int a;
     int b;
+    cout<<"My Calculator App"<<endl;
     cout<<"Enter two numbers:";
     cin>>a;
     cin>>b;
