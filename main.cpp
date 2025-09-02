@@ -5,6 +5,7 @@ int menuList(){
     cout<<"0.Exit"<<endl;
     cout<<"1.Addition"<<endl;
     cout<<"2.Substraction"<<endl;
+    cout<<"3.Multiply"<<endl;
     cout<<"Enter your choice:";
     cin>>choice;
     return choice;
@@ -17,6 +18,10 @@ int addition(int a,int b){
 int substraction(int a,int b){
     int sub=a-b;
     cout<<"Substraction is :"<<sub<<endl;
+}
+int multiply(int a,int b){
+    int mul=a*b;
+    cout<<"Multiply is :"<<mul<<endl;
 }
 int main(){
     int a;
@@ -34,6 +39,8 @@ int main(){
             case 2:
                 ::substraction(a,b);
                 break;
+            case 3:
+                ::multiply(a,b);
         }
     }
 
